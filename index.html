@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        #map {
+            width: 1162px;
+            height: 757px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('ESRI:102744','+proj=lcc +lat_0=36.6666666666667 +lon_0=-111.5 +lat_1=37.2166666666667 +lat_2=38.35 +x_0=500000.000000001 +y_0=3000000 +ellps=GRS80 +towgs84=0.9956,-1.9013,-0.5215,-0.025915,-0.009426,-0.011599,0.00062 +units=us-ft +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/DSR_Grazing_Allotments_1.js"></script><script src="layers/DSR_POI_2.js"></script><script src="layers/DSR_Association_Parcels_3.js"></script><script src="layers/DSR_Private_Parcels_4.js"></script><script src="layers/DSR_Upgraded_Connections_5.js"></script><script src="layers/Wells_6.js"></script><script src="layers/DSW_Water_Lines_7.js"></script><script src="layers/SamplingStations_8.js"></script>
+        <script src="styles/DSR_Grazing_Allotments_1_style.js"></script><script src="styles/DSR_POI_2_style.js"></script><script src="styles/DSR_Association_Parcels_3_style.js"></script><script src="styles/DSR_Private_Parcels_4_style.js"></script><script src="styles/DSR_Upgraded_Connections_5_style.js"></script><script src="styles/Wells_6_style.js"></script><script src="styles/DSW_Water_Lines_7_style.js"></script><script src="styles/SamplingStations_8_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
